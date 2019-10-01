@@ -1,0 +1,83 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Minicurso KiCad"
+Date "2019-10-01"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:R R?
+U 1 1 5D93A3C7
+P 1400 3900
+F 0 "R?" V 1195 3900 50  0000 C CNN
+F 1 "1k" V 1286 3900 50  0000 C CNN
+F 2 "" H 1400 3900 50  0001 C CNN
+F 3 "~" H 1400 3900 50  0001 C CNN
+	1    1400 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5D93B60F
+P 2650 4350
+F 0 "R?" H 2582 4304 50  0000 R CNN
+F 1 "10k" H 2582 4395 50  0000 R CNN
+F 2 "" H 2650 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D93D66F
+P 2050 4700
+F 0 "#PWR?" H 2050 4450 50  0001 C CNN
+F 1 "GND" H 2055 4527 50  0000 C CNN
+F 2 "" H 2050 4700 50  0001 C CNN
+F 3 "" H 2050 4700 50  0001 C CNN
+	1    2050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4700 2050 4600
+Wire Wire Line
+	2050 3900 1650 3900
+Wire Wire Line
+	2650 4600 2050 4600
+Connection ~ 2050 4600
+Wire Wire Line
+	2050 3900 2350 3900
+Connection ~ 2050 3900
+Wire Wire Line
+	2050 4600 2050 4400
+$Comp
+L pspice:R R?
+U 1 1 5D93D300
+P 2050 4150
+F 0 "R?" H 2118 4196 50  0000 L CNN
+F 1 "510k" H 2118 4105 50  0000 L CNN
+F 2 "" H 2050 4150 50  0001 C CNN
+F 3 "~" H 2050 4150 50  0001 C CNN
+	1    2050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q?
+U 1 1 5D93F8B8
+P 2550 3900
+F 0 "Q?" H 2740 3946 50  0000 L CNN
+F 1 "2SC1815" H 2740 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2750 3825 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 2550 3900 50  0001 L CNN
+	1    2550 3900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
