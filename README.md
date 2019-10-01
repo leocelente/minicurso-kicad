@@ -1,0 +1,2 @@
+# minicurso-kicad
+ Arquivos KiCAD
