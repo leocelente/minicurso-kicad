@@ -1,2 +1,2 @@
 # minicurso-kicad
- Arquivos KiCAD
+Output of a half-day course on KiCAD
